@@ -1,0 +1,4 @@
+baseURL = "https://til.vegardstikbakke.com/"
+languageCode = "en-us"
+title = "Vegard Stikbakke's TILs"
+theme = "ananke"
