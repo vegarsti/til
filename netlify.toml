@@ -1,6 +1,6 @@
 [build]
 publish = "hugosite/public"
-command = "hugo -s hugosite --gc --minify"
+command = "hugo --source hugosite --gc --minify"
 
 [context.production.environment]
 HUGO_VERSION = "0.87.0"
@@ -8,20 +8,20 @@ HUGO_ENV = "production"
 HUGO_ENABLEGITINFO = "true"
 
 [context.split1]
-command = "hugo -s hugosite --gc --minify --enableGitInfo"
+command = "hugo --source hugosite --gc --minify --enableGitInfo"
 
 [context.split1.environment]
 HUGO_VERSION = "0.87.0"
 HUGO_ENV = "production"
 
 [context.deploy-preview]
-command = "hugo -s hugosite --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
+command = "hugo --source hugosite --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
 
 [context.deploy-preview.environment]
 HUGO_VERSION = "0.87.0"
 
 [context.branch-deploy]
-command = "hugo -s hugosite --gc --minify -b $DEPLOY_PRIME_URL"
+command = "hugo --source hugosite --gc --minify -b $DEPLOY_PRIME_URL"
 
 [context.branch-deploy.environment]
 HUGO_VERSION = "0.87.0"
