@@ -7,7 +7,7 @@ tags: [bash]
 I had a big output that I wanted to grep for two things at the same time, and I wanted them to come in order.
 The solution, from [this StackOverflow answer with an excellent description](https://unix.stackexchange.com/a/560102/382971) is:
 
-```
+```sh
 $ echo "something\nnot" | tee >(grep "some" >&2) | (sleep 0.05; cat) | grep not
 something
 not
