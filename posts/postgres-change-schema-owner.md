@@ -5,5 +5,5 @@ tags: [postgres]
 ---
 
 ```sql
-ALTER SCHEMA name TO owner;
+ALTER SCHEMA name OWNER TO new_owner;
 ```
