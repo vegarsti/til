@@ -6,7 +6,7 @@ tags: [tmux]
 
 Tmux config from [this blog post](https://juliu.is/a-simple-tmux/).
 
-```
+```sh
 set -g mouse on
 
 set -g history-limit 102400

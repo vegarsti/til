@@ -6,6 +6,6 @@ tags: [go]
 
 Run all tests except those called `TestSelect...`:
 
-```
+```sh
 go test -run "Test[^Select]"
 ```

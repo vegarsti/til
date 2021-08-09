@@ -6,6 +6,6 @@ tags: [bash]
 
 Number of Go code lines
 
-```
+```sh
 wc -l **/*.go | awk '{sum += $1} END {print sum}'
 ```
