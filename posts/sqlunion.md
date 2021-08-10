@@ -19,3 +19,24 @@ FROM table_expression_2
 
 Source: https://www.postgresqltutorial.com/postgresql-union/
 
+Examples
+```sql
+select 1 as n union select 2 as n;
+```
+
+```sh
+ n
+---
+ 1
+ 2
+```
+
+```sql
+select 1 as n union select 'a' as n;
+```
+
+```sh
+ERROR:  22P02: invalid input syntax for integer: "a"
+LINE 1: select 1 as n union select 'a' as n;
+                                   ^
+```
