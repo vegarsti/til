@@ -1,4 +1,8 @@
 {{ define "main" }}
-{{ .Content }}
+{{ $posts := where site.RegularPages "Type" "in" "posts" }}
+<p>
+Short snippets about things learned.
+You can also <a href="/tags/">browse by tag</a>!
+</p>
 {{- partial "posts.html" . -}}
 {{ end }}
