@@ -1,5 +1,5 @@
 ---
-title: "Capturing using regex in Go"
+title: "Using regex capture groups to replace text in Go"
 date: "2021-08-11T13:41:16Z"
 tags: [go]
 ---
