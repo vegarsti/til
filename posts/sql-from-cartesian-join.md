@@ -16,7 +16,7 @@ select a, b from foo, bar;
 
 This will produce the cartesian product, i.e. for each row in `foo` combine with each row in `bar`.
 
-```
+```sql
  a | b
 ---+---
  1 | 3
