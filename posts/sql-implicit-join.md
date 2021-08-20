@@ -1,5 +1,5 @@
 ---
-title: "Selecting FROM multiple columns gives cartesian product, same as cross and inner join"
+title: "Implicit join = cross join = cartesian product = inner join with ON true"
 date: "2021-08-18T17:44:41Z"
 tags: [postgres, sql]
 ---
@@ -14,7 +14,9 @@ insert into bar values (3, 4);
 select a, b from foo, bar;
 ```
 
-This will produce the cartesian product, i.e. for each row in `foo` combine with each row in `bar`.
+This is often called an implicit join.
+
+This will produce the [cartesian product](https://en.wikipedia.org/wiki/Cartesian_product), i.e. for each row in `foo` combine with each row in `bar`.
 
 ```sql
  a | b
