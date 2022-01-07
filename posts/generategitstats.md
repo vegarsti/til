@@ -1,7 +1,7 @@
 ---
-title: "Generate-git-stats"
+title: "Generate git stats"
 date: "2022-01-05T10:33:17Z"
-tags: []
+tags: [git]
 ---
 
 Jamie Brandon's [2021 post](https://www.scattered-thoughts.net/writing/2021/) had some neat oneliner stats of lines of code changed in a given repo.
