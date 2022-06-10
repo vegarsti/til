@@ -6,6 +6,7 @@ tags: [git]
 
 I have been aliasing a bunch of git commands using regular Bash aliases, but I decided to move it to the
 Git config.
+This gives me all the auto complete of the spelled out Git commands!
 
 ```bash
 $ cat ~/.gitconfig
@@ -38,5 +39,11 @@ $ g s
 ?? untracked-file
 $ g cb feature-branch
 Switched to a new branch 'feature-branch'
+$ g sw main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+$ g bd <TAB>
+$ g bd feature-branch
+Deleted branch feature-branch (was 29b5f11).
 ```
 
