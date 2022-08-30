@@ -1,5 +1,5 @@
 ---
-title: "Combine-pdfs-ghostscript"
+title: "Combine PDFs with Ghostscript"
 date: "2022-08-08T07:33:14Z"
 tags: [macos, bash]
 ---
